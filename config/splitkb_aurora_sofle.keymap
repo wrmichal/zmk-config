@@ -60,15 +60,15 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |     |     |  {   |  }   |      |                   |      |       |       |      |       |       |
-// |       |     |     |  (   |  )   |      |                   |  <-  |   v   |   ^   |  ->  |       |       |
-// |       |     |     |  [   |  ]   |      |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+// |       |     |     |      |      |      |                   |  <-  |   v   |   ^   |  ->  |       |       |
+// |       |     |     |      |      |      |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans    &trans &trans &trans   &trans   &trans                       &trans      &trans    &trans    &trans    &trans    &trans
-&trans    &trans &trans &kp LBRC &kp RBRC &trans                       &trans      &trans    &trans    &trans    &trans    &trans
-&trans    &trans &trans &kp LPAR &kp RPAR &trans                       &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
-&trans    &trans &trans &kp LBKT &kp RBKT &trans    &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
+&trans    &trans &trans &trans   &trans   &trans                       &trans      &trans    &trans    &trans    &trans    &trans
+&trans    &trans &trans &trans   &trans   &trans                       &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+&trans    &trans &trans &trans   &trans   &trans    &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
                  &trans &trans   &trans   &trans    &trans   &trans    &trans      &trans    &trans    &trans
             >;
 
