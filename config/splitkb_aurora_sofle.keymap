@@ -80,9 +80,9 @@
 // |         |        |        |        |        |        |                      |        |        |        |        |        |        |  12
 // |  BTCLR  |  BT1   |  BT2   |  BT3   |  BT4   |  BT5   |                      |        |        |        |        |        |        |  24
 // |         |        |        |        |        |        |                      |        |    y   |        |        |        |        |  36
-// |         | EP_ON  | EP_OFF | EP_TOG |        |        |        |    |        |        |        |        |        |        |        |  49
+// |         | EP_ON  | EP_OFF | EP_TOG |        |        |        |    |        |        |        |        |        |        |        |  50
 //                    |        |        |        |        |        |    |        |        |        |        |        |
-//			50	51	   52	    53        54           55       56
+//			51        52	    53        54      55      	     56      57
             bindings = <
 &trans      &trans            &trans            &trans            &trans        &trans                              &trans    &trans    &trans    &trans    &trans    &trans
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4                        &trans    &trans    &trans    &trans    &trans    &trans
@@ -99,7 +99,12 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <55 56>;
+            key-positions = <54 57>;
+            bindings = <&kp ESC>;
+        };
+        combo_esc_2 {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
             bindings = <&kp ESC>;
         };
     };
