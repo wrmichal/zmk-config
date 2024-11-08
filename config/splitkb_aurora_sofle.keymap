@@ -82,7 +82,7 @@
 // |         |        |        |        |        |        |                      |        |    y   |        |        |        |        |  36
 // |         | EP_ON  | EP_OFF | EP_TOG |        |        |        |    |        |        |        |        |        |        |        |  49
 //                    |        |        |        |        |        |    |        |        |        |        |        |
-			50	51	   52	    53        54           55       56
+//			50	51	   52	    53        54           55       56
             bindings = <
 &trans      &trans            &trans            &trans            &trans        &trans                              &trans    &trans    &trans    &trans    &trans    &trans
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4                        &trans    &trans    &trans    &trans    &trans    &trans
