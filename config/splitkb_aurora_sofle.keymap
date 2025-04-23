@@ -81,17 +81,17 @@
 
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |         |       |       |       |       |       |                           |       |       |       |       |       |        |
+// |         |       |       |       |       |       |                           |   v   |   >   |       |       |       |        |
 // |         |       |       |   {   |   }   |       |                           |       |       |       |       |       |        |
 // |         |       |       |   (   |   )   |       |                           |   <-  |   v   |   ^   |   ->  |       |        |
-// |         |       |       |   [   |   ]   |       |          |     |          |       |       |       |       |   \   |        |
+// |         |       |       |   [   |   ]   |       |          |     |          |   ^   |   <   |       |       |   \   |        |
 //                   |       |       |       |         |        |     |        |   SPEC   |       |       |       |
             bindings = <
-&trans   &trans  &trans  &trans    &trans    &trans                         &trans      &trans    &trans    &trans    &trans    &trans
-&trans   &trans  &trans  &kp LBRC  &kp RBRC  &trans                         &trans      &trans    &trans    &trans    &trans    &trans
-&trans   &trans  &trans  &kp LPAR  &kp RPAR  &trans                         &kp LEFT    &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
-&trans   &trans  &trans  &kp LBKT  &kp RBKT  &trans     &trans   &trans     &trans      &trans    &trans    &trans    &kp BSLH  &trans
-                 &trans  &trans    &trans    &trans     &trans   &trans     &mo 3       &trans    &trans    &trans
+&trans   &trans  &trans  &trans    &trans    &trans                         &trans     &trans    &trans    &trans    &trans    &trans
+&trans   &trans  &trans  &kp LBRC  &kp RBRC  &trans                         &kp DOWN   &kp RIGHT &trans    &trans    &trans    &trans
+&trans   &trans  &trans  &kp LPAR  &kp RPAR  &trans                         &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
+&trans   &trans  &trans  &kp LBKT  &kp RBKT  &trans     &trans   &trans     &kp UP     &kp LEFT  &trans    &trans    &kp BSLH  &trans
+                 &trans  &trans    &trans    &trans     &trans   &trans     &mo 3      &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
